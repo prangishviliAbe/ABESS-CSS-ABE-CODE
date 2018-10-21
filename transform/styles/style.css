@@ -26,3 +26,7 @@
   cursor: pointer;
   border: 0;
 }
+
+.box:active {
+  transform: skewY(50deg);
+}
