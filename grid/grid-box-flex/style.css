@@ -1,8 +1,9 @@
 .box-grid {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 200px auto auto 200px;
   grid-gap: 1px 1px;
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: auto;
 }
 
@@ -10,10 +11,7 @@
 
 .box-grid div {
   background: lightblue;
-  padding: 30px;
-  color: black;
-  font-weight: bolder;
-  text-align: center;
+  padding: 20px;
 }
 
 .header {
@@ -22,8 +20,11 @@
 }
 
 .content {
- grid-column-start: 2;
+ grid-column-start: 1;
  grid-column-end: 4;
+}
+
+.left_bar {
 }
 
 .footer {
@@ -55,4 +56,31 @@
   background: white;
   color: black;
   cursor: pointer;
+  transition: background 0.4s;
+}
+
+.article {
+  padding: 0;
+}
+.article .title {
+  display: inline-block;
+}
+.article .info {
+  margin-top: 20px;
+  padding: 0;
+}
+
+
+@media only screen and (max-width: 800px) {
+   .content {
+ grid-column-start: 1;
+ grid-column-end: 5;
+}
+}
+
+@media only screen and (max-width: 800px) {
+   .right_bar {
+ grid-column-start: 1;
+ grid-column-end: 5;
+}
 }
