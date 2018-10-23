@@ -35,4 +35,24 @@
   float: left;
   text-decoration: none;
   color: white;
+  background: red;
+  display: inline-block;
+}
+
+
+.navigation {
+  display: inline-block;
+  float: right;
+}
+.navigation .nav-ul .nav-li {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 20px;
+  margin-top: -20px;
+}
+
+.navigation .nav-ul .nav-li:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
 }
