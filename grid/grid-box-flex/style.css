@@ -11,20 +11,9 @@
 .box-grid div {
   background: lightblue;
   padding: 30px;
-  color: white;
+  color: black;
   font-weight: bolder;
   text-align: center;
-}
-
-.box:hover {
-  background: red;
-  cursor: pointer;
-  box-shadow: 0 5px 8px -6px black;
-}
-
-.box:active {
-  background: black;
-  
 }
 
 .header {
@@ -40,4 +29,10 @@
 .footer {
   grid-column-start: 1;
   grid-column-end: 5;
+}
+
+.logo {
+  float: left;
+  text-decoration: none;
+  color: white;
 }
